@@ -1,4 +1,7 @@
-﻿[class*="col-"] {
+﻿*{
+    margin: 0;
+}
+[class*="col-"] {
     float: left;
     padding: 15px;
     box-sizing: border-box;
@@ -55,7 +58,7 @@
 }
 
 .modal {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -194,6 +197,7 @@
     line-height: 5vh;
     color: #38160D;
     margin-top: -2vh;
+    margin: 0;
 }
 
 .parents {
@@ -203,5 +207,77 @@
     font-size: 1.3em;
     line-height: 5vh;
     color: #A65301;
-    margin-top: -2vh;
+/*    margin-top: -2vh;*/
+}
+
+
+.container,
+.rotated-block {
+    display: block;
+}
+
+.container {
+    background: white;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.block {
+    position: absolute;
+    zi-index: 1;
+    width: 100vw;
+    min-height: 100vh;
+    top: 20vh;
+/*    background: #FFFFFF;*/
+    /*display: block;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    position: absolute;*/
+    background: linear-gradient(180deg, #F3E8DC 0%, #CD9E70 100%);
+/*    background: linear-gradient(180deg, #F3E8DC 0%, #CD9E70 100%);*/
+}
+
+.rotated-block {
+    position: absolute;
+    zi-index: 1;
+    width: 100%;
+    min-height: 150%;
+}
+
+.rotated-block-not-white {
+    background: rgba(244, 233, 221, 0.75);
+    top: 22%;
+}
+
+.rotated-block-not-white-ten {
+    background: rgba(244, 233, 221, 0.5);
+    top: 5%;
+}
+
+.rotated-block-white {
+    top: 82.5%;
+    background: #FFFFFF;
+}
+
+#rotated-block-left {
+    transform: rotate(5deg);
+    left: -50%;
+}
+
+#rotated-block-right {
+    transform: rotate(-5deg);
+    right: -50%;
+}
+
+#rotated-block-left-ten {
+    transform: rotate(10deg);
+    left: -50%;
+}
+
+#rotated-block-right-ten {
+    transform: rotate(-10deg);
+    right: -50%;
 }

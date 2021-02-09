@@ -1,6 +1,9 @@
 ﻿@media only screen and (max-width: 767px) {
     /* For tablets: */
 
+    * {
+        margin: 0;
+    }
     .col-s-1 {
         width: 8.33%;
     }
@@ -143,7 +146,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50vw;
+/*        width: 50vw;*/
 /*        height: 50vh;*/
         box-sizing: border-box;
     }
@@ -156,6 +159,7 @@
         line-height: 1em;
         /* identical to box height */
         color: #CA7D30;
+        margin-bottom: -0.3vh;
     }
 
     .s-align {
@@ -178,7 +182,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1em;
-        line-height: 1em;
+        line-height: 3em;
         text-align: center;
         color: #38160D;
     }
@@ -199,4 +203,18 @@
         display: table;
         box-sizing: border-box;
     }
+
+    /*.s-container {
+        display: block;
+        background: white;
+        width: 100vw;
+        height: 20vh;
+        overflow: hidden;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }*/
+
+
 }
