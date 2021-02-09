@@ -1,5 +1,6 @@
 ﻿@media only screen and (max-width: 768px) {
     /* For tablets: */
+
     .col-s-1 {
         width: 8.33%;
     }
@@ -136,5 +137,21 @@
     #screen1 #text-top {
         margin-top: 10vh;
         text-align: center;
+    }
+
+/*Text ---------------------------------------------*/
+    .s-gunungan {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+    }
+/*-------------------------------------------------*/
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 }
