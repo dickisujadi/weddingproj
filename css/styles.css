@@ -1,10 +1,7 @@
-﻿body
-{
-}
-
-[class*="col-"] {
+﻿[class*="col-"] {
     float: left;
     padding: 15px;
+    box-sizing: border-box;
 }
 
 .col-1 {
@@ -21,6 +18,7 @@
 
 .col-4 {
     width: 33.33%;
+    box-sizing: border-box;
 }
 
 .col-5 {
@@ -53,6 +51,7 @@
 
 .col-12 {
     width: 100%;
+    box-sizing: border-box;
 }
 
 .modal {
@@ -148,10 +147,61 @@
     margin-right: auto;
     width: 20%;
     height: 20%;
+    box-sizing: border-box;
+}
+
+.romeo {
+    text-align: right;
+}
+
+.juliet {
+    text-align: left;
+}
+
+.and {
+    font-family: Enriqueta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 68px;
+    line-height: 91px;
+    /* identical to box height */
+    text-align: center;
+    color: #BE8246;
+}
+
+.nama {
+    font-family: Federant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #CA7D30;
 }
 
 .row::after {
     content: "";
     clear: both;
     display: table;
+    box-sizing: border-box;
+}
+
+.ptrdr {
+    font-family: Enriqueta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #38160D;
+    margin-top: -2%;
+}
+
+.parents {
+    font-family: Enriqueta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #A65301;
+    margin-top: -2%;
 }
