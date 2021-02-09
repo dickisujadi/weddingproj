@@ -57,8 +57,8 @@
         z-index: 1; /* Sit on top */
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
+        width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
         overflow: auto; /* Enable scroll if needed */
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: black; /* Black w/ opacity */
@@ -68,10 +68,10 @@
     #modal_photo {
         display: block;
         position: fixed;
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         object-fit: cover;
-        margin-top: 5%;
+        margin-top: 5vh;
     }
 
     .black-background {
@@ -82,8 +82,8 @@
         position: fixed;
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
+        width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: black; /* Black w/ opacity */
         object-fit: cover;
@@ -98,16 +98,16 @@
         left: 0;
         /*    top: 50vh;*/
         color: white;
-        padding-left: 10px;
-        padding-right: 100px;
-        width: 100%;
-        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
+        height: 100vh;
     }
 
 
     .text-box .enriq {
         text-align: center;
-        font-size: 17px;
+        font-size: 0.9em;
         font-family: 'Enriqueta';
     }
 
@@ -118,14 +118,14 @@
 
     #screen1 #text-top #DR {
         font-family: 'Federant';
-        font-size: 32px;
-        margin-top: -1%;
+        font-size: 2em;
+        margin-top: -1vh;
     }
 
     .text-box #nm {
         text-align: center;
         font-family: 'Playfair Display';
-        font-size: 35px;
+        font-size: 2.5em;
         margin-top: 2vh;
     }
 
@@ -143,8 +143,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-        height: 50%;
+        width: 50vw;
+/*        height: 50vh;*/
         box-sizing: border-box;
     }
 
@@ -152,8 +152,8 @@
         font-family: Federant;
         font-style: normal;
         font-weight: normal;
-        font-size: 31px;
-        line-height: 38px;
+        font-size: 1.5em;
+        line-height: 1em;
         /* identical to box height */
         color: #CA7D30;
     }
@@ -166,8 +166,8 @@
         font-family: Enriqueta;
         font-style: normal;
         font-weight: normal;
-        font-size: 54px;
-        line-height: 91px;
+        font-size: 3em;
+        line-height: 2vh;
         /* identical to box height */
         text-align: center;
         color: #BE8246;
@@ -177,21 +177,19 @@
         font-family: Enriqueta;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 1em;
+        line-height: 1em;
         text-align: center;
         color: #38160D;
-        margin-top: -5%;
     }
 
     .s-parents {
         font-family: Enriqueta;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 1em;
+        line-height: 1.5em;
         color: #A65301;
-        margin-top: -5%;
     }
 /*-------------------------------------------------*/
 
