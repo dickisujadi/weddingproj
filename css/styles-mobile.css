@@ -175,6 +175,9 @@
         /* identical to box height */
         text-align: center;
         color: #BE8246;
+        margin-top: 2vh;
+        display: block;
+        margin-bottom: 2vh;
     }
 
     .s-ptrdr {
@@ -185,6 +188,8 @@
         line-height: 3em;
         text-align: center;
         color: #38160D;
+        margin-top: -1vh;
+        margin-bottom: -1vh;
     }
 
     .s-parents {
@@ -216,5 +221,120 @@
         box-sizing: border-box;
     }*/
 
+    #text-arab {
+/*        margin-top: 2vh;*/
+        width: 70vw;
+        font-size: 1.5em;
+        /*    color: #38160D;*/
+        text-align: center;
+        margin-top: 5vh;
+        color: saddlebrown;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
+    #text-arti {
+        font-size: 0.8em;
+        color: #38160D;
+        text-align: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+    }
+
+    #text-surah {
+        font-size: 0.7em;
+        color: #38160D;
+        text-align: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+    }
+
+    .block-container,
+    .rotated-block {
+        display: block;
+    }
+
+    .block-container {
+        background: white;
+        width: 100vw;
+        height: 30vh;
+        overflow: hidden;
+        position: relative;
+        top: 0vh;
+    }
+
+    .block {
+        position: absolute;
+        zi-index: 1;
+        width: 100vw;
+        min-height: 65vh;
+        top: 20%;
+        background: linear-gradient(180deg, #F3E8DC -1%, #A65301 100%);
+    }
+
+    .rotated-block {
+        position: absolute;
+        zi-index: 1;
+        width: 100%;
+        min-height: 150%;
+    }
+
+    .rotated-block-not-white {
+        background: rgba(244, 233, 221, 0.75);
+        top: 12%;
+    }
+
+    .rotated-block-not-white-ten {
+        background: rgba(244, 233, 221, 0.5);
+        top: 5%;
+    }
+
+    .rotated-block-white {
+        top: 93%;
+        background: #FFFFFF;
+    }
+
+    #rotated-block-left {
+        transform: rotate(5deg);
+        left: -50%;
+    }
+
+    #rotated-block-right {
+        transform: rotate(-5deg);
+        right: -50%;
+    }
+
+    #rotated-block-left-ten {
+        transform: rotate(10deg);
+        left: -50%;
+    }
+
+    #rotated-block-right-ten {
+        transform: rotate(-10deg);
+        right: -50%;
+    }
+
+    #screen2 {
+        margin-top: 0;
+    }
+
+    .invit {
+        font-family: Enriqueta;
+        font-style: normal;
+        font-weight: normal;
+        font-size: .7em;
+        line-height: 4vh;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #38160D;
+    }
 }

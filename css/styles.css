@@ -1,6 +1,12 @@
 ﻿*{
     margin: 0;
 }
+
+.gunungan:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -58,7 +64,7 @@
 }
 
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -211,33 +217,34 @@
 }
 
 
-.container,
+.block-container,
 .rotated-block {
     display: block;
 }
 
-.container {
+.block-container {
     background: white;
     width: 100vw;
     height: 50vh;
     overflow: hidden;
     position: relative;
+    top: 0vh;
 }
 
 .block {
     position: absolute;
     zi-index: 1;
     width: 100vw;
-    min-height: 100vh;
-    top: 20vh;
-/*    background: #FFFFFF;*/
+    min-height: 65vh;
+    top: 17vh;
+    /*    background: #FFFFFF;*/
     /*display: block;
     width: 100vw;
     height: 50vh;
     overflow: hidden;
     position: absolute;*/
-    background: linear-gradient(180deg, #F3E8DC 0%, #CD9E70 100%);
-/*    background: linear-gradient(180deg, #F3E8DC 0%, #CD9E70 100%);*/
+    background: linear-gradient(180deg, #F3E8DC -1%, #A65301 100%);
+    /*    background: linear-gradient(180deg, #F3E8DC 0%, #CD9E70 100%);*/
 }
 
 .rotated-block {
@@ -249,12 +256,12 @@
 
 .rotated-block-not-white {
     background: rgba(244, 233, 221, 0.75);
-    top: 22%;
+    top: 15%;
 }
 
 .rotated-block-not-white-ten {
     background: rgba(244, 233, 221, 0.5);
-    top: 5%;
+    top: 0;
 }
 
 .rotated-block-white {
@@ -280,4 +287,57 @@
 #rotated-block-right-ten {
     transform: rotate(-10deg);
     right: -50%;
+}
+
+#text-arab {
+    margin-top: 2vh;
+    font-size: 2.2em;
+/*    color: #38160D;*/
+    text-align: center;
+    margin-top: 5vh;
+    color: saddlebrown;
+}
+
+#text-arti {
+    font-size: 1.2em;
+    color: #38160D;
+    text-align: center;
+    padding-left:10vw;
+    padding-right:10vw;
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+#text-surah {
+    font-size: 1.2em;
+    color: #38160D;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+#screen2 {
+    margin-top: 10vh;
+}
+
+.invit {
+    font-family: Enriqueta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 4vh;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #38160D;
+}
+
+.text-invit {
+    /*        margin-bottom: 3vh;*/
+    margin-top: 2vh;
 }
