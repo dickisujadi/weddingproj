@@ -1,9 +1,9 @@
 ﻿@media only screen and (max-width: 767px) {
     /* For tablets: */
 
-    * {
+    /* * {
         margin: 0;
-    }
+    } */
     .col-s-1 {
         width: 8.33%;
     }
@@ -54,30 +54,38 @@
         box-sizing: border-box;
     }
 
-    .modal {
+    /* ----------------------------------- SCREEN 1 */
+    #screen1{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .s-modal {
         display: block; /* Hidden by default */
         position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
         left: 0;
         top: 0;
-        width: 100vw; /* Full width */
-        height: 100vh; /* Full height */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: black; /* Black w/ opacity */
+        /* background-color: rgb(0,0,0); 
+        background-color: black;  */
         object-fit: cover;
     }
 
-    #modal_photo {
+    .s-modal_photo {
+        z-index: 1; /* Sit on top */
         display: block;
         position: fixed;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
-        margin-top: 5vh;
+        left: auto;
+        right: auto;
     }
 
-    .black-background {
+    .s-black-background {
         z-index: 2;
         display: block;
         background-color: black;
@@ -85,185 +93,12 @@
         position: fixed;
         left: 0;
         top: 0;
-        width: 100vw; /* Full width */
-        height: 100vh; /* Full height */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: black; /* Black w/ opacity */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
         object-fit: cover;
     }
 
-    .text-box {
-        z-index: 3;
-        display: block;
-        position: fixed;
-        /*    bottom: 10%;*/
-        right: 0;
-        left: 0;
-        /*    top: 50vh;*/
-        color: white;
-        padding-left: 0;
-        padding-right: 0;
-        width: 100vw;
-        height: 100vh;
-    }
-
-
-    .text-box .enriq {
-        text-align: center;
-        font-size: 0.9em;
-        font-family: 'Enriqueta';
-    }
-
-
-    .text-box .enriq #pernikahan {
-        top: 0;
-    }
-
-    #screen1 #text-top #DR {
-        font-family: 'Federant';
-        font-size: 2em;
-        margin-top: -1vh;
-    }
-
-    .text-box #nm {
-        text-align: center;
-        font-family: 'Playfair Display';
-        font-size: 2.5em;
-        margin-top: 2vh;
-    }
-
-    #screen1 #text-bottom {
-        margin-top: 45vh;
-    }
-
-    #screen1 #text-top {
-        margin-top: 10vh;
-        text-align: center;
-    }
-
-/*Text ---------------------------------------------*/
-    .s-gunungan {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-/*        width: 50vw;*/
-/*        height: 50vh;*/
-        box-sizing: border-box;
-    }
-
-    .s-nama {
-        font-family: Federant;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.5em;
-        line-height: 1em;
-        /* identical to box height */
-        color: #CA7D30;
-        margin-bottom: -0.3vh;
-    }
-
-    .s-align {
-        text-align: center;
-    }
-
-    .s-and {
-        font-family: Enriqueta;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 3em;
-        line-height: 2vh;
-        /* identical to box height */
-        text-align: center;
-        color: #BE8246;
-        margin-top: 2vh;
-        display: block;
-        margin-bottom: 2vh;
-    }
-
-    .s-ptrdr {
-        font-family: Enriqueta;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1em;
-        line-height: 3em;
-        text-align: center;
-        color: #38160D;
-        margin-top: -1vh;
-        margin-bottom: -1vh;
-    }
-
-    .s-parents {
-        font-family: Enriqueta;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1em;
-        line-height: 1.5em;
-        color: #A65301;
-    }
-/*-------------------------------------------------*/
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        box-sizing: border-box;
-    }
-
-    /*.s-container {
-        display: block;
-        background: white;
-        width: 100vw;
-        height: 20vh;
-        overflow: hidden;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }*/
-
-    #text-arab {
-/*        margin-top: 2vh;*/
-        width: 70vw;
-        font-size: 1.5em;
-        /*    color: #38160D;*/
-        text-align: center;
-        margin-top: 5vh;
-        color: saddlebrown;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    #text-arti {
-        font-size: 0.8em;
-        color: #38160D;
-        text-align: center;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3vh;
-    }
-
-    #text-surah {
-        font-size: 0.7em;
-        color: #38160D;
-        text-align: center;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        width: 40vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2vh;
-    }
-
-    .block-container,
-    .rotated-block {
-        display: block;
-    }
-
-    .block-container {
+    .block-container-template {
         background: white;
         width: 100vw;
         height: 30vh;
@@ -272,69 +107,201 @@
         top: 0vh;
     }
 
-    .block {
-        position: absolute;
-        zi-index: 1;
+    .s-front_text-container {
+        z-index: 3;
+        background: none;
         width: 100vw;
-        min-height: 65vh;
-        top: 20%;
-        background: linear-gradient(180deg, #F3E8DC -1%, #A65301 100%);
+        height: 60vh;
+        overflow: hidden;
+        position: relative;
+        top: 25%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    .rotated-block {
-        position: absolute;
-        zi-index: 1;
-        width: 100%;
-        min-height: 150%;
+    .s-front {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        text-align: center;
+        color: white;
     }
 
-    .rotated-block-not-white {
-        background: rgba(244, 233, 221, 0.75);
-        top: 12%;
+    .s-front_gunungan {
+        z-index: 3;
+        width: 25vw;
     }
 
-    .rotated-block-not-white-ten {
-        background: rgba(244, 233, 221, 0.5);
-        top: 5%;
+    .s-front_pernikahan {
+        z-index: 3;
+        font-family: Halant;
+        font-size: 1.5em;
     }
 
-    .rotated-block-white {
-        top: 93%;
-        background: #FFFFFF;
+    .s-front_dr {
+        z-index: 3;
+        font-family: 'Great Vibes';
+        font-size: 3.5em;
     }
 
-    #rotated-block-left {
-        transform: rotate(5deg);
-        left: -50%;
+    .s-front_tgl {
+        z-index: 3;
+        font-family: Halant;
+        font-size: 1em;
     }
 
-    #rotated-block-right {
-        transform: rotate(-5deg);
-        right: -50%;
+    .s-front_open {
+        z-index: 3;
+        font-family: Halant;
+        font-size: 1em;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 50vw;
+        height: 5vh;
+        margin-top: 2vh;
+        padding-top: 0.7vh;
     }
+    /* ----------------------------------- END OF SCREEN 1 */
 
-    #rotated-block-left-ten {
-        transform: rotate(10deg);
-        left: -50%;
-    }
 
-    #rotated-block-right-ten {
-        transform: rotate(-10deg);
-        right: -50%;
-    }
-
+    /* ----------------------------------- SCREEN 2 */
     #screen2 {
-        margin-top: 0;
+        width: 100vw;
+        height: 200vh;
+        margin: 0;
     }
 
-    .invit {
-        font-family: Enriqueta;
+    #s-container1 {
+        background: white;
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+        top: 0vh;
+    }
+
+    .s-modal_photo_2 {
+        z-index: 1; /* Sit on top */
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        left: auto;
+        right: auto;
+    }
+
+    #s-container2 {
+        margin-top: 2vh;
+        width: 70vw;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        display: block;
+        font-family: Halant;
         font-style: normal;
         font-weight: normal;
-        font-size: .7em;
-        line-height: 4vh;
+        font-size: .8em;
+        line-height: 2em;
+        /* or 208% */
+
         text-align: center;
-        letter-spacing: 0.03em;
-        color: #38160D;
+        letter-spacing: 0.05em;
+        color: #4A4A4A;
     }
+
+    b {
+        font-size: 1.8em;
+        color: #A65301;
+        outline: none;
+    }
+
+    #s-container3 {
+        background-color: #FEE3C7;
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        top: 0vh;
+        display: block;
+    }
+
+    .s-inside_container3-tgl {
+        height: 100%;
+        width: 80%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 7%;
+    }
+
+    #senin {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.2em;
+        color: #A65301;
+        font-family: 'Great Vibes';
+        text-align: center;
+    }
+
+    .mei {
+        color: #A65301;
+        font-family: 'Gupter';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.7em;
+        margin-top: .5em; 
+    }
+
+    #tigas {
+        color: #A65301;
+        font-family: 'Asul';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .line1 {
+        
+    }
+
+    .line2 {
+        position: relative;
+        width: 30vw;
+        /* height: 5vw; */
+        top: 0;
+        display: block;
+        border-top: 1px solid #A65301;
+    }
+
+    .line3 {
+        position: relative;
+        width: 20vw;
+        /* height: 30vw; */
+        left: 40vw;
+        top: 0;
+        display: block;
+        border-top: 1px solid #A65301;
+    }
+    /* ----------------------------------- END OF SCREEN 2 */
 }
