@@ -131,7 +131,7 @@
 
     .s-front_gunungan {
         z-index: 3;
-        width: 25vw;
+        width: 20vw;
     }
 
     .s-front_pernikahan {
@@ -234,19 +234,24 @@
         display: block;
     }
 
+    #s-container3::before {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5); 
+    }
+
     .s-inside_container3-tgl {
-        height: 100%;
+        height: auto;
         width: 80%;
         display: block;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 7%;
+        margin-top: 5%;
     }
 
     #senin {
         margin-left: auto;
         margin-right: auto;
-        font-size: 3.2em;
         color: #A65301;
         font-family: 'Great Vibes';
         text-align: center;
@@ -258,7 +263,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.7em;
-        margin-top: .5em; 
+        padding: 0;
     }
 
     #tigas {
@@ -268,6 +273,22 @@
         font-weight: normal;
         font-size: 3.5em;
         text-align: center;
+        padding: 0;
+    }
+
+    .jam {
+        color: #A65301;
+        font-family: 'Gupter';
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .jam-kanan {
+        text-align: left;
+    }
+
+    .jam-kiri {
+        text-align: right;
     }
 
     .row::after {
@@ -278,11 +299,16 @@
 
     [class*="col-"] {
         float: left;
-        padding: 15px;
+        padding: 1vh;
     }
 
     .line1 {
-        
+        position: relative;
+        width: 70vw;
+        /* height: 5vw; */
+        top: 0;
+        display: block;
+        border-top: 1px solid #A65301;
     }
 
     .line2 {
@@ -302,6 +328,20 @@
         top: 0;
         display: block;
         border-top: 1px solid #A65301;
+    }
+
+    .container-tgl_n_akadres {
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .watermark {
+        display: block;
+        opacity: .1;
+        position: absolute;
+        object-fit: cover;
+        margin-left: 25vw;
     }
     /* ----------------------------------- END OF SCREEN 2 */
 }
