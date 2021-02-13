@@ -111,7 +111,7 @@
         z-index: 3;
         background: none;
         width: 100vw;
-        height: 60vh;
+        height: auto;
         overflow: hidden;
         position: relative;
         top: 25%;
@@ -131,7 +131,7 @@
 
     .s-front_gunungan {
         z-index: 3;
-        width: 20vw;
+        width: 15vw;
     }
 
     .s-front_pernikahan {
@@ -161,8 +161,8 @@
         border-radius: 5px;
         width: 50vw;
         height: 5vh;
-        margin-top: 2vh;
-        padding-top: 0.7vh;
+        margin-top: 5vh;
+        padding-top: 0.5vh;
     }
     /* ----------------------------------- END OF SCREEN 1 */
 
@@ -227,18 +227,20 @@
     #s-container3 {
         background-color: #FEE3C7;
         width: 100vw;
-        height: 80vh;
+        height: auto;
         overflow: hidden;
         position: relative;
         top: 0vh;
         display: block;
+        padding-bottom: 5vh;
     }
 
-    #s-container3::before {
-        -ms-transform: scale(1.5); /* IE 9 */
-        -webkit-transform: scale(1.5); /* Safari 3-8 */
+    /* #s-container3::before {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5); 
-    }
+    } 
+    */
 
     .s-inside_container3-tgl {
         height: auto;
@@ -264,6 +266,7 @@
         font-weight: normal;
         font-size: 1.7em;
         padding: 0;
+        margin-top: 1vh;
     }
 
     #tigas {
@@ -299,7 +302,7 @@
 
     [class*="col-"] {
         float: left;
-        padding: 1vh;
+        /* padding: 1vh; */
     }
 
     .line1 {
@@ -342,6 +345,121 @@
         position: absolute;
         object-fit: cover;
         margin-left: 25vw;
+    }
+
+    /* animation */
+    /* Some constant values which will apply on every projects. */
+    .front_aos_container .aos_container .aos_content {
+        position: relative;
+        /* height: calc(1 * 350px);
+        width: calc(1.4142 * 350px);
+        margin: 20px; */
+        transition: 1s;
+        transition-property: opacity, transform;
+        opacity: 0;
+    }
+
+    .front_aos_container .aos_container.active .aos_content {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) rotate3d(0deg, 0deg, 0deg) scale(1) skew(0deg, 0deg);
+    }
+
+    /* User choice of animation. */
+
+    .box1 .aos_content {
+        transform: translateX(-200px);
+    }
+
+    .box2 .aos_content {
+        transform: translateX(200px);
+    }
+
+    .box3 .aos_content {
+        transform: scale(0);
+    }
+
+    .box4 .aos_content {
+        transform: scale(0);
+    }
+
+    .box5 .aos_content {
+        transform: rotateX(90deg);
+    }
+
+    .box6 .aos_content {
+        transform: rotateX(90deg);
+    }
+
+    .box7 .aos_content {
+        transform: translate3d(300px, 300px, 0);
+    }
+
+    .box8 .aos_content {
+        transform: translate3d(-300px, -300px, 0);
+    }
+
+    .front_aos_container .box1.active .aos_content {
+        transform: translateX(0);
+    }
+
+    .front_aos_container .box2.active .aos_content {
+        transform: translateX(0);
+    }
+
+    .front_aos_container .box3.active .aos_content {
+        transform: scale(1);
+    }
+
+    .front_aos_container .box4.active .aos_content {
+        transform: scale(1);
+    }
+
+    .front_aos_container .box5.active .aos_content {
+        transform: rotateX(0deg);
+    }
+
+    .front_aos_container .box6.active .aos_content {
+        transform: rotateX(0deg);
+    }
+
+    .front_aos_container .box7.active .aos_content {
+        transform: translate3d(0, 0, 0);
+    }
+
+    .front_aos_container .box8.active .aos_content {
+        transform: translate3d(0, 0, 0);
+    }
+
+    #s-container3.active .box1 .aos_content {
+        transform: translateX(0);
+    }
+
+    #s-container3.active .box2 .aos_content {
+        transform: translateX(0);
+    }
+
+    #s-container3.active .box3 .aos_content {
+        transform: scale(1);
+    }
+
+    #s-container3.active .box4 .aos_content {
+        transform: scale(1);
+    }
+
+    #s-container3.active .box5 .aos_content {
+        transform: rotateX(0deg);
+    }
+
+    #s-container3.active .box6 .aos_content {
+        transform: rotateX(0deg);
+    }
+
+    #s-container3.active .box7 .aos_content {
+        transform: translate3d(0, 0, 0);
+    }
+
+    #s-container3.active .box8 .aos_content {
+        transform: translate3d(0, 0, 0);
     }
     /* ----------------------------------- END OF SCREEN 2 */
 }
